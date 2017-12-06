@@ -1,0 +1,66 @@
+<html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <title>Api wikipedia</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //step 1- get input from user
+
+            getResults("war");
+            //step 2 - using input from the user (query) make the API call to get the JSON response
+            function getResults(userSearchTerm) {
+                $.getJSON("https://www.googleapis.com/youtube/v3/search", {
+                        part: "snippet", //Youtube API special parameter
+                        maxResults: 20, //number of results per page
+                        key: "AIzaSyBVRHSu3BHi9mMF9c2C_TC8SxT05U0KAJg",
+                        q: userSearchTerm, //shearch query from the user
+                        type: "video", //only return videos (no channels or playlists) so we can take the video ID and link it back to Youtube
+                        videoType: "movie"
+                    },
+                    function(receivedApiData) {
+                        //show json array received from the API call
+                        console.log(receivedApiData);
+                        //if no results show an error
+                        if (receivedApiData.pageInfo.totalResults == 0) {
+                            alert("No videos found!");
+                        }
+                        //if there are results, call the displaySearchResults
+                        else {
+                            displaySearchResults(receivedApiData.items);
+                        }
+
+                    });
+
+                // STEP 3 - using the JSON response (videos), populate the relevant part of your HTML with the variable inside the JSON
+                function displaySearchResults(videosArray) {
+
+                    //create an empty variable to store one LI for each one the results
+                    var buildTheHtmlOutput = "";
+
+                    $.each(videosArray, function(videosArrayKey, videosArrayValue) {
+                        //create and populate one LI for each of the results ( "+=" means concatenate to the previous one)
+                        buildTheHtmlOutput += "<li>";
+                        buildTheHtmlOutput += "<p>" + videosArrayValue.snippet.title + "</p>"; //output vide title
+                        buildTheHtmlOutput += "<a href='https://www.youtube.com/watch?v=" + videosArrayValue.id.videoId + "' target='_blank'>"; //taget blank is going to open the video in a new window
+                        buildTheHtmlOutput += "<img src='" + videosArrayValue.snippet.thumbnails.high.url + "'/>"; //display video's thumbnail
+                        buildTheHtmlOutput += "</a>";
+                        buildTheHtmlOutput += "</li>";
+                    });
+
+                    //use the HTML output to show it in the index.html
+                    $(".js-search-results").html(buildTheHtmlOutput);
+                }
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+    <p>There is nothing to see here. Please check your console log instead</p>
+</body>
+
+</html>
