@@ -1,1 +1,86 @@
+* {
+    margin: 0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background: -webkit-linear-gradient(rgba(28, 28, 31, 0.1), rgba(28, 28, 31, 0.8)), -webkit-linear-gradient(rgba(28, 28, 31, 0.5), rgba(28, 28, 31, 0.3)), url("movie-img/bg-img.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgba(28, 28, 31, 1);
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+}
+
+.container {
+    width: 600px;
+    height: 150px;
+    margin: 10px auto;
+    background: #666;
+}
+
+
+form input {
+    margin: 30px;
+    height: 25px;
+    width: 200px;
+    background: #fff;
+    padding: 10px;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+   transition: all .3s ease-in;
+}
+
+h2 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.js-youtube-search-results li {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 50px;
+    border: 2px black solid;
+    display: inline-block;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+}
+
+.js-wiki-search-results {
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    background-color: bisque;
+}
+
+
+.js-dive-search-results {
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    background-color: darkslategray;
+}
+
+
+
+
+
 

@@ -15,7 +15,7 @@ $(document).ready(function () {
     function getYoutubeResults(userSearchTerm) {
         $.getJSON("https://www.googleapis.com/youtube/v3/search", {
                 part: "snippet", //Youtube API special parameter
-                maxResults: 20, //number of results per page
+                maxResults: 5, //number of results per page
                 key: "AIzaSyBVRHSu3BHi9mMF9c2C_TC8SxT05U0KAJg",
                 q: userSearchTerm, //shearch query from the user
                 type: "video", //only return videos (no channels or playlists) so we can take the video ID and link it back to Youtube

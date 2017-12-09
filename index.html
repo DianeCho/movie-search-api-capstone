@@ -5,24 +5,28 @@
     <meta charset="UTF-8">
     <title>Movie Search</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
 </head>
 
 <body>
     <main role="main" class="js-output" aria-live="assertive">
         <h1>Movie Search</h1>
-
-        <form action="#" class="js-search-form">
-            <label for="query"></label>
-            <input value="Mean Girls" type="text" class="js-query">
-            <button type="submit">Search</button>
-        </form>
+        <div class="container">
+            <form action="#" class="js-search-form">
+                <label for="query"></label>
+                <input value="Mean Girls" type="text" class="js-query">
+                <button type="submit">Search</button>
+            </form>
+        </div>
 
 
         <h2>Results</h2>
-        <div class="js-youtube-search-results"></div>
-        <div class="js-wiki-search-results"></div>
-        <div class="js-dive-search-results"></div>
-
+        <div class="container-box">
+            <div class="js-youtube-search-results"></div>
+            <div class="js-wiki-search-results"></div>
+            <div class="js-dive-search-results"></div>
+        </div>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
