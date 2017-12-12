@@ -11,7 +11,7 @@ Movies are an escape from reality. I love watching all kinds of genres of movies
 ## Use Case
 This app is for movie buffs or users who is trying to find the right movie to watch. By simply using one site to find enough information. This app will allow the user to search through different movie titles, that will populate the movie trailer, the synposis, and movie ratings. The goal for this app is to help users find more information about the movie they are interested in knowing more about.
 
-![Use Case](https://github.com/bgerardi20/pet-adoption-api-capstone/blob/master/github-images/IMG_1631.jpg)
+<!--![Use Case](https://github.com/bgerardi20/pet-adoption-api-capstone/blob/master/github-images/IMG_1631.jpg)-->
 
 
 ## User Stories
