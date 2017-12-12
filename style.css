@@ -1,11 +1,6 @@
 * {
-    margin: 0;
-    padding:0;
-    border:0;
     box-sizing: border-box;
 }
-
-
 
 body {
     background: -webkit-linear-gradient(rgba(28, 28, 31, 0.1), rgba(28, 28, 31, 0.8)), -webkit-linear-gradient(rgba(28, 28, 31, 0.5), rgba(28, 28, 31, 0.3)), url("movie-img/bg-img.jpg");
@@ -22,61 +17,83 @@ body {
 
 h1 {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 200px;
+    margin-bottom: auto;
+    font-size: 45px;
+    font-weight: 100;
+    padding: 35px;
     color: white;
 }
 
-.container {
-    width: 600px;
-    height: 150px;
-    margin: 10px auto;
-    background: #666;
+
+
+form input{
+    border: none;
+    border-bottom:  3px solid ghostwhite;
+    padding: 8px 2px;
+    height: 50px;
+    width: 400px;
+    color: ghostwhite;
+    font-size: 35px;
+    background: none;
+    font-size: 35px;
+    font-weight: 200;
 }
 
 
-form input {
-    margin: 30px;
-    height: 25px;
-    width: 200px;
-    background: #fff;
-    padding: 10px;
-    -webkit-transition: all .3s ease-in;
-    -moz-transition: all .3s ease-in;
-    -ms-transition: all .3s ease-in;
-    -o-transition: all .3s ease-in;
-   transition: all .3s ease-in;
-}
 
-h2 {
-    color: white;
-    font-size: 40px;
+form.js-search-form {
+    display: block;
     text-align: center;
 }
 
-.js-youtube-search-results li {
+#findIt {
+    border: 3px solid ghostwhite;
+    padding: 8px 13px;
+    color: ghostwhite;
+    font-size: 35px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    background: rgba(255, 255, 255, 0.25);
+    text-shadow: 0 0 3px #555555;
+    position: relative;
+    left: -3px;
+}
+
+
+
+
+.js-youtube-search-results {
     text-align: center;
     margin-top: 50px;
     margin-left: 50px;
-    border: 2px black solid;
+    font-size: 30px;
+    color: ghostwhite;
     display: inline-block;
-    font-size: 25px;
-    color: white;
+    background: rgba(255, 255, 255, 0.1);
     list-style-type: none;
+    padding-right: 50px;
+    padding-left: 50px;
 }
+
 
 .js-wiki-search-results {
     text-align: center;
     display: inline-block;
-    font-size: 15px;
-    background-color: bisque;
+    font-size: 30px;
+    color: ghostwhite;
+    list-style-type: none;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 
 .js-dive-search-results {
     text-align: center;
     display: inline-block;
-    font-size: 15px;
-    background-color: darkslategray;
+    font-size: 30px;
+    color: ghostwhite;
+    list-style-type: none;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 

@@ -15,13 +15,12 @@ $(document).ready(function () {
     function getYoutubeResults(userSearchTerm) {
         $.getJSON("https://www.googleapis.com/youtube/v3/search", {
                 part: "snippet", //Youtube API special parameter
-                maxResults: 5, //number of results per page
+                maxResults: 10, //number of results per page
                 key: "AIzaSyBVRHSu3BHi9mMF9c2C_TC8SxT05U0KAJg",
                 q: userSearchTerm, //shearch query from the user
                 type: "video", //only return videos (no channels or playlists) so we can take the video ID and link it back to Youtube
                 videoType: "movie",
             },
-
 
             function (receivedApiData) {
                 //show json array received from the API call
@@ -37,6 +36,7 @@ $(document).ready(function () {
 
             });
     }
+
     // STEP 3 - using the JSON response (videos), populate the relevant part of your HTML with the variable inside the JSON
     function displayYoutubeSearchResults(videosArray) {
 
@@ -56,9 +56,10 @@ $(document).ready(function () {
         //use the HTML output to show it in the index.html
         $(".js-youtube-search-results").html(buildTheHtmlOutput);
     }
+
+
     //step 2 - using input from the user (query) make the API call to get the JSON response
     function getWikiResults(userSearchTerm) {
-
 
         // encodeURIComponent() Function This function encodes special characters. In addition, it encodes the following characters: , / ? : @ & = + $ #
         // https://www.w3schools.com/jsref/jsref_encodeURIComponent.asp
@@ -104,6 +105,8 @@ $(document).ready(function () {
         }
         $(".js-wiki-search-results").html(buildTheHtmlOutput);
     }
+
+
     //step 2 - using input from the user (query) make the API call to get the JSON response
     function getDiveResults(userSearchTerm) {
 
