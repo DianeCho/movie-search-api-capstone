@@ -16,7 +16,7 @@ This app is for movie buffs or users who is trying to find the right movie to wa
 
 ## User Stories
 * As user, I want to {functionality} in order to {business justification}
-![Use Case](https://github.com/DianeCho/movie-search-api-capstone/blob/master/github-images/home-screen.JPG)
+![Use Case](https://github.com/DianeCho/movie-search-api-capstone/blob/master/github-images/functionality.jpg)
 
 * As a user I would like to land on the website and undestand what is the website about in order to use it
 ![Use Case](https://github.com/DianeCho/movie-search-api-capstone/blob/master/github-images/home-screen.JPG)
