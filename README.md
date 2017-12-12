@@ -1,7 +1,7 @@
 # movie-search-api-capstone
 Thinkful First Capstone Project - Movie search for API capstone
 
-Thinkful (https://www.thinkful.com) First Capstone Project - App integrating with Petfinder API.
+Thinkful (https://www.thinkful.com) First Capstone Project - App integrating with movie search API.
 https://dianecho.github.io/movie-search-api-capstone/
 
 
@@ -16,13 +16,13 @@ This app is for movie buffs or users who is trying to find the right movie to wa
 
 ## User Stories
 * As user, I want to {functionality} in order to {business justification}
-![Use Case](https://github.com/bgerardi20/pet-adoption-api-capstone/blob/master/github-images/IMG_1631.jpg)
+![Use Case](https://github-images/home-screen.JPG)
 
 * As a user I would like to land on the website and undestand what is the website about in order to use it
-![Use Case](https://github.com/bgerardi20/pet-adoption-api-capstone/blob/master/github-images/IMG_1648.jpg)
+![Use Case](https://github-images/home-screen.JPG)
 
 * As a user I want to find more information about the movie I am searching for.
-![Use Case](https://github.com/bgerardi20/pet-adoption-api-capstone/blob/master/github-images/IMG_1655.jpg)
+![Use Case](https://github-images/results-page.JPG)
 
 * As a user I want to search through the movie trailers, read the synposis of the movie, and know what the user's ratings is.
 ![Use Case](https://github.com/bgerardi20/pet-adoption-api-capstone/blob/master/github-images/IMG_1651.jpg)
