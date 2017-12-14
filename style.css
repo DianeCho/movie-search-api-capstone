@@ -1,4 +1,7 @@
 * {
+    margin: 0;
+    padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
@@ -15,21 +18,36 @@ body {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
+.intro {
+    text-align: center;
+    margin: 1rem auto;
+}
+
 h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 2rem;
+    color: white;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 2rem;
+}
+
+h2 {
     text-align: center;
     margin-top: 200px;
     margin-bottom: auto;
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 100;
     padding: 35px;
     color: white;
 }
 
-
-
-form input{
+form input {
     border: none;
-    border-bottom:  3px solid ghostwhite;
+    border-bottom: 3px solid ghostwhite;
     padding: 8px 2px;
     height: 50px;
     width: 400px;
@@ -47,7 +65,8 @@ form.js-search-form {
     text-align: center;
 }
 
-#findIt {
+
+button {
     border: 3px solid ghostwhite;
     padding: 8px 13px;
     color: ghostwhite;
@@ -63,45 +82,85 @@ form.js-search-form {
 
 
 
-.js-youtube-search-results {
+.js-youtube-search-results,
+.js-wiki-search-results,
+.js-dive-search-results {
     text-align: center;
     margin-top: 100px;
-    margin-left: 50px;
-    float: left;
-    font-size: 30px;
     color: ghostwhite;
-    display: inline-block;
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     background: rgba(255, 255, 255, 0.1);
     list-style-type: none;
     padding-right: 50px;
     padding-left: 50px;
 }
 
-
-.js-wiki-search-results {
-    text-align: center;
+.js-youtube-search-results li,
+.js-wiki-search-results li,
+.js-dive-search-results li {
+    width: 48%;
     display: inline-block;
-    float: right;
-    margin-top: 10px;
-    font-size: 30px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1rem;
+    vertical-align: top;
+}
+
+.js-dive-search-results li {
+    height: 300px;
+    overflow-x: auto;
+}
+
+.js-youtube-search-results p {
+    font-size: 25px;
+    text-align: left;
+}
+
+.js-youtube-search-results img {
+    width: 100%;
+}
+
+footer a {
     color: ghostwhite;
+}
+
+footer a:visited {
+    color: blue;
+}
+
+footer li {
     list-style-type: none;
-    background: rgba(255, 255, 255, 0.1);
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    color: ghostwhite;
 }
 
 
-.js-dive-search-results {
-    text-align: center;
-    display: inline-block;
-    font-size: 30px;
-    margin-top: 10px;
-    color: ghostwhite;
-    list-style-type: none;
-    background: rgba(255, 255, 255, 0.1);
+
+
+@media only screen and (max-width: 800px) {
+    .js-youtube-search-results,
+    .js-wiki-search-results,
+    .js-dive-search-results {
+        width: 95%;
+
+    }
+
+    .js-youtube-search-results li,
+    .js-wiki-search-results li,
+    .js-dive-search-results li {
+        width: 100%;
+        display: block;
+    }
+
 }
-
-
-
-
-
-

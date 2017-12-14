@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    $('main').hide();
+    $('.intro-button').click(function (event) {
+        event.preventDefault();
+        $('main').show();
+        $('.intro').hide();
+    });
     //step 1- get input from user
     $('.js-search-form').submit(function (event) {
         //if the page refreshes when you submit the form use 'preventDefault() to force Javascript to handle the form submit
@@ -106,7 +112,6 @@ $(document).ready(function () {
         $(".js-wiki-search-results").html(buildTheHtmlOutput);
     }
 
-
     //step 2 - using input from the user (query) make the API call to get the JSON response
     function getDiveResults(userSearchTerm) {
 
@@ -167,6 +172,7 @@ $(document).ready(function () {
         //use the HTML output to show it in the index.html
         $(".js-dive-search-results").html(buildTheHtmlOutput);
     }
+
 
 
 

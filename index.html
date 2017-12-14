@@ -10,8 +10,15 @@
 </head>
 
 <body>
+    <header>
+        <h1><img src="movie-img/logo.svg" class="logo" alt="">Movie Search</h1>
+    </header>
+    <section class="intro">
+        <h2>Sometimes it is difficult to find the movie you want to watch. Movie Search is there to help you find relatable movies just by entering a movie title.<br> Try it yourself!</h2>
+        <button class="intro-button">Enter</button>
+    </section>
     <main role="main" class="js-output" aria-live="assertive">
-        <h1>Want to find more movies you'll enjoy?</h1>
+        <h2>Want to find more movies you'll enjoy?</h2>
         <div class="container">
             <form action="#" class="js-search-form">
                 <label for="query"></label>
@@ -22,11 +29,18 @@
 
 
         <div class="container-box">
-            <div class="js-youtube-search-results"></div>
-            <div class="js-wiki-search-results"></div>
-            <div class="js-dive-search-results"></div>
+            <ul class="js-youtube-search-results"></ul>
+            <!--            <ul class="js-wiki-search-results"></ul>-->
+            <ul class="js-dive-search-results"></ul>
         </div>
     </main>
+    <footer>
+        <ul class="footer-info">
+            <li><a href="https://github.com/DianeCho">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/dianecho">Linkedin</a></li>
+            <li><a href="mailto: diane.kim.cho@gmail.com">Email</a></li>
+        </ul>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
