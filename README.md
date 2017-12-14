@@ -37,11 +37,11 @@ You can access a working prototype of the app here https://dianecho.github.io/mo
 
 ## Screen-shoots
 The screen-shoots for all for pages:
-![home-page](https://github.com/DianeCho/movie-search-api-capstone/github-images/git-home-screen.png)
+![home-page](https://github.com/DianeCho/movie-search-api-capstone/blob/master/github-images/git-home-screen.png)
 
-![search-page](https://github.com/DianeCho/movie-search-api-capstone/github-images/git-functionality.png)
+![search-page](https://github.com/DianeCho/movie-search-api-capstone/blob/master/github-images/git-functionality.png)
 
-![results-page](https://github.com/DianeCho/movie-search-api-capstone/github-images/git-results-page.png)
+![results-page](https://github.com/DianeCho/movie-search-api-capstone/blob/master/github-images/git-results-page.png)
 
 
 
