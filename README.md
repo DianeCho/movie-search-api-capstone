@@ -37,13 +37,13 @@ You can access a working prototype of the app here https://dianecho.github.io/mo
 
 ## Screen-shoots
 The screen-shoots for all for pages:
-![home-page](https://github.com/bgerardi20/pet-adoption-api-capstone/blob/master/github-images/home-page.png)
+![home-page](https://github.com/DianeCho/movie-search-api-capstone/github-images/git-home-screen.png)
 
-![adoption-page](https://github.com/bgerardi20/pet-adoption-api-capstone/blob/master/github-images/adoption-page.png)
+![search-page](https://github.com/DianeCho/movie-search-api-capstone/github-images/git-functionality.png)
 
-![random-pet-page](https://github.com/bgerardi20/pet-adoption-api-capstone/blob/master/github-images/random-pet-page.png)
+![results-page](https://github.com/DianeCho/movie-search-api-capstone/github-images/git-results-page.png)
 
-![shelter-page](https://github.com/bgerardi20/pet-adoption-api-capstone/blob/master/github-images/shelter-page2.png)
+
 
 ## Functionality
 The app's functionality includes:
