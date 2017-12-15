@@ -105,13 +105,15 @@ button {
     display: inline-block;
     margin-left: 1%;
     margin-right: 1%;
-    margin-top: 1rem;
+    margin-top: 2rem;
     vertical-align: top;
+
 }
 
 .js-dive-search-results li {
     height: 300px;
     overflow-x: auto;
+    border: 1px solid gray;
 }
 
 .js-youtube-search-results p {
