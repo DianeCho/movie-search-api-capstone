@@ -161,10 +161,10 @@ $(document).ready(function () {
             buildTheHtmlOutput += "<p>" + diveArraysValue.Name + "</p>"; //output vide title
             buildTheHtmlOutput += "<p>" + diveArraysValue.wTeaser + "</p>"; //output vide title
             buildTheHtmlOutput += "<a href='" + diveArraysValue.yUrl + "' target='_blank'>";
-            buildTheHtmlOutput += "Preview"; //display video's thumbnail
+            buildTheHtmlOutput += "Preview "; //display video's thumbnail
             buildTheHtmlOutput += "</a>";
             buildTheHtmlOutput += "<a href='" + diveArraysValue.wUrl + "' target='_blank'>";
-            buildTheHtmlOutput += "WikiPage"; //display video's thumbnail
+            buildTheHtmlOutput += " WikiPage"; //display video's thumbnail
             buildTheHtmlOutput += "</a>";
             buildTheHtmlOutput += "</li>";
         });
